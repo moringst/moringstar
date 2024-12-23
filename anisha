@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Anisha 💖</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffcccb; /* Soft pink background */
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            overflow: hidden;
+            transition: background-color 3s ease;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            color: #333;
+            border-radius: 20px;
+            padding: 40px;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            font-size: 40px;
+            color: #ff69b4;
+            margin-bottom: 30px;
+        }
+        .message {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .signature {
+            font-size: 25px;
+            font-weight: bold;
+            color: #ff69b4;
+        }
+        .heart {
+            font-size: 60px;
+            color: #ff6347;
+        }
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #e55b93;
+        }
+        .heart-floating {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            font-size: 40px;
+            color: #ff6347;
+            animation: floatHeart 6s ease-in-out infinite;
+        }
+        @keyframes floatHeart {
+            0% {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateX(-50%) translateY(-100px);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .popup-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .popup-close {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .popup-close:hover {
+            background-color: #e55b93;
+        }
+
+        /* Red Text with Continuous Glow */
+        .glowing-text {
+            color: #ff69b4;
+            font-size: 24px;
+            font-weight: bold;
+            animation: glow 1.5s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4, 0 0 20px #ff69b4;
+            }
+            50% {
+                text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4;
+            }
+            100% {
+                text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4, 0 0 20px #ff69b4;
+            }
+        }
+
+        /* Blue Question Text */
+        .question-text {
+            color: #1e90ff; /* Blue color for the question */
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Pink Surprise Message with Light Yellow Glow */
+        .surprise-message {
+            color: #ff1493; /* Pink color for the message */
+            font-size: 24px;
+            font-weight: bold;
+            animation: yellowGlow 1.5s ease-in-out infinite;
+        }
+
+        @keyframes yellowGlow {
+            0% {
+                text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00;
+            }
+            50% {
+                text-shadow: 0 0 20px #ffff00, 0 0 30px #ffff00, 0 0 40px #ffff00;
+            }
+            100% {
+                text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00;
+            }
+        }
+
+        /* Answer Text Color: Green for 'Yes', Red for 'No' */
+        .answer-yes {
+            color: #32cd32; /* Green for positive answer */
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .answer-no {
+            color: #ff6347; /* Red for negative answer */
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Anisha, You Are My Everything 💖</div>
+
+        <div class="message">
+            <p>My Sona Anisha,</p>
+            <p>Every moment with you feels like a beautiful dream that I never want to wake up from. You light up my world in ways I never imagined possible. Your smile, your laugh, the way you make everything better... I'm so lucky to call you mine.</p>
+            <p>I just wanted to remind you today of how much you mean to me. You are my heart, my soul, my everything, and I promise to always love you.</p>
+            <p>I'm truly grateful for every second we share together, and I can't wait to create more memories with you at IIT BHU.</p>
+        </div>
+
+        <p class="heart">❤️</p>
+        <div class="signature">Forever Yours, Hulk</div>
+
+        <button class="button" onclick="showSurprise()">Click Here for a Surprise</button>
+    </div>
+
+    <!-- Pop-up Surprise Message -->
+    <div class="popup" id="popupMessage">
+        <div class="popup-content">
+            <p id="popupText" class="surprise-message">
+                You are the best thing that ever happened to me, Anisha! 🌟<br><br>
+                <strong>Forever Yours, Hulk ❤️</strong>
+            </p>
+            <p id="questionText" class="question-text">
+                <strong>Here is a question for you :</strong><br>
+                Do you believe in love at first sight, or should I walk by again? 😘<br><br>
+                <button onclick="answerYes()">Yes</button>
+                <button onclick="answerNo()">No</button>
+            </p>
+            <p id="answerText"></p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            // Show the popup with a surprise message
+            const popup = document.getElementById('popupMessage');
+            popup.style.display = 'flex';
+        }
+
+        function closePopup() {
+            const popup = document.getElementById('popupMessage');
+            popup.style.display = 'none';
+        }
+
+        function answerYes() {
+            const answerText = document.getElementById('answerText');
+            answerText.textContent = "Walk by again, but I’m already falling for you! 😍";
+            answerText.classList.add('answer-yes');
+        }
+
+        function answerNo() {
+            const answerText = document.getElementById('answerText');
+            answerText.textContent = "No worries, I’m sure you’ll fall for me eventually! 😉";
+            answerText.classList.add('answer-no');
+        }
+    </script>
+
+</body>
+</html>
